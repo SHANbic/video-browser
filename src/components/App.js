@@ -19,11 +19,6 @@ class App extends React.Component {
     return (
       <div className="ui container">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <p>
-          {this.state.videos.length > 0
-            ? `I have ${this.state.videos.length} videos to show you ;)`
-            : "Search for videos and I'll fetch them!"}
-        </p>
         <VideoList videos={this.state.videos} />
       </div>
     );
